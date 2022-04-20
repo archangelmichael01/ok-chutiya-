@@ -1176,8 +1176,10 @@ async def RiZoeLX():
         except Exception as e:
             pass
 
+
 loop = asyncio.get_event_loop()
 loop.run_until_complete(RiZoeLX())
+
 
 XX.append(1517994352)
 XX.append(OWNER_ID)
@@ -1381,8 +1383,6 @@ async def logss():
      except Exception as ex:
         print(ex)
         pass
-
-loop.run_until_complete(logss())
 
 # Plugins Load Def
 
@@ -1621,6 +1621,8 @@ if BOT_TOKEN:
             shortname = path1.stem
             load_Assistant(shortname.replace(".py", ""))
     print("Assisting Bot set up completely!")
+
+loop.run_until_complete(logss())
 
 print("RiZoeL X Spam Successfully deployed -!")
 print("Enjoy! Do visit @RiZoeLX")
