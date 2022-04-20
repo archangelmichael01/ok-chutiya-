@@ -10,7 +10,6 @@ from sys import argv
 from pathlib import Path
 import logging
 import time
-from resources.utils import _plugins, load_Assistant, Start_Assistant
 import telethon.utils
 from telethon.tl import functions
 from telethon import TelegramClient, events
@@ -1385,7 +1384,214 @@ async def logss():
 
 loop.run_until_complete(logss())
 
-# path 
+# Plugins Load Def
+
+import importlib
+from pathlib import Path
+import inspect
+import re
+
+
+def _plugins(shortname):
+        path = Path(f"plugins/{shortname}.py")
+        name = "plugins.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        mod.Riz = Riz
+        mod.logger = logging.getLogger(shortname)
+        # auto-load
+        mod.RiZoeL = RiZoeL
+        mod.Riz2 = Riz2
+        mod.Riz3 = Riz3
+        mod.Riz4 = Riz4
+        mod.Riz5 = Riz5
+        mod.Riz6 = Riz6
+        mod.Riz7 = Riz7
+        mod.Riz8 = Riz8
+        mod.Riz9 = Riz9
+        mod.Riz10 = Riz10
+        mod.Riz11 = Riz11
+        mod.Riz12 = Riz12
+        mod.Riz13 = Riz13
+        mod.Riz14 = Riz14
+        mod.Riz15 = Riz15
+        mod.Riz16 = Riz16
+        mod.Riz17 = Riz17
+        mod.Riz18 = Riz18
+        mod.Riz19 = Riz19
+        mod.Riz20 = Riz20
+        mod.Riz21 = Riz21
+        mod.Riz22 = Riz22
+        mod.Riz23 = Riz23
+        mod.Riz24 = Riz24
+        mod.Riz25 = Riz25
+        mod.Riz26 = Riz26
+        mod.Riz27 = Riz27
+        mod.Riz28 = Riz28
+        mod.Riz29 = Riz29
+        mod.Riz30 = Riz30
+        mod.Riz31 = Riz31
+        mod.Riz32 = Riz32
+        mod.Riz33 = Riz33
+        mod.Riz34 = Riz34
+        mod.Riz35 = Riz35
+        mod.Riz36 = Riz36
+        mod.Riz37 = Riz37
+        mod.Riz38 = Riz38
+        mod.Riz39 = Riz39
+        mod.Riz40 = Riz40
+        mod.hl = hl
+        mod.DEV = DEV
+        mod.SUDO_USERS = SUDO_USERS
+        # support for paperplaneextended
+        spec.loader.exec_module(mod)
+        # for imports
+        sys.modules["plugins." + shortname] = mod
+        print("• RiZoeLXspam Successfully imported:  " + shortname)
+
+def Start_Assistant(shortname):
+    if shortname.startswith("__"):
+        pass
+    elif shortname.endswith("_"):
+        import importlib
+        import sys
+        from pathlib import Path
+
+        path = Path(f"assistant/{shortname}.py")
+        name = "assistant.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        print("Checking Bot Token......")
+        print("Starting Bot")
+    else:
+        import importlib
+        import sys
+        from pathlib import Path
+
+        path = Path(f"assistant/{shortname}.py")
+        name = "assistant.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        mod.RiZoeL = RiZoeL
+        mod.Riz = Riz
+        mod.Riz2 = Riz2
+        mod.Riz3 = Riz3
+        mod.Riz4 = Riz4
+        mod.Riz5 = Riz5
+        mod.Riz6 = Riz6
+        mod.Riz7 = Riz7
+        mod.Riz8 = Riz8
+        mod.Riz9 = Riz9
+        mod.Riz10 = Riz10
+        mod.Riz11 = Riz11
+        mod.Riz12 = Riz12
+        mod.Riz13 = Riz13
+        mod.Riz14 = Riz14
+        mod.Riz15 = Riz15
+        mod.Riz16 = Riz16
+        mod.Riz17 = Riz17
+        mod.Riz18 = Riz18
+        mod.Riz19 = Riz19
+        mod.Riz20 = Riz20
+        mod.Riz21 = Riz21
+        mod.Riz22 = Riz22
+        mod.Riz23 = Riz23
+        mod.Riz24 = Riz24
+        mod.Riz25 = Riz25
+        mod.Riz26 = Riz26
+        mod.Riz27 = Riz27
+        mod.Riz28 = Riz28
+        mod.Riz29 = Riz29
+        mod.Riz30 = Riz30
+        mod.Riz31 = Riz31
+        mod.Riz32 = Riz32
+        mod.Riz33 = Riz33
+        mod.Riz34 = Riz34
+        mod.Riz35 = Riz35
+        mod.Riz36 = Riz36
+        mod.Riz37 = Riz37
+        mod.Riz38 = Riz38
+        mod.Riz39 = Riz39
+        mod.Riz40 = Riz40
+        mod.DEV = DEV
+        mod.SUDO_USERS = SUDO_USERS
+        spec.loader.exec_module(mod)
+        sys.modules["assistant" + shortname] = mod
+
+
+def load_Assistant(shortname):
+    if shortname.startswith("__"):
+        pass
+    elif shortname.endswith("_"):
+        import importlib
+        import sys
+        from pathlib import Path
+
+        path = Path(f"assistant/plugins/{shortname}.py")
+        name = "assistant.plugins.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        print("> Loading Spam Assistant < \n")
+        print("• XSpam Assistant Imported:" + shortname)
+    else:
+        import importlib
+        import sys
+        from pathlib import Path
+
+        path = Path(f"assistant/plugins/{shortname}.py")
+        name = "assistant.plugins.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        mod.RiZoeL = RiZoeL
+        mod.Riz = Riz
+        mod.Riz2 = Riz2
+        mod.Riz3 = Riz3
+        mod.Riz4 = Riz4
+        mod.Riz5 = Riz5
+        mod.Riz6 = Riz6
+        mod.Riz7 = Riz7
+        mod.Riz8 = Riz8
+        mod.Riz9 = Riz9
+        mod.Riz10 = Riz10
+        mod.Riz11 = Riz11
+        mod.Riz12 = Riz12
+        mod.Riz13 = Riz13
+        mod.Riz14 = Riz14
+        mod.Riz15 = Riz15
+        mod.Riz16 = Riz16
+        mod.Riz17 = Riz17
+        mod.Riz18 = Riz18
+        mod.Riz19 = Riz19
+        mod.Riz20 = Riz20
+        mod.Riz21 = Riz21
+        mod.Riz22 = Riz22
+        mod.Riz23 = Riz23
+        mod.Riz24 = Riz24
+        mod.Riz25 = Riz25
+        mod.Riz26 = Riz26
+        mod.Riz27 = Riz27
+        mod.Riz28 = Riz28
+        mod.Riz29 = Riz29
+        mod.Riz30 = Riz30
+        mod.Riz31 = Riz31
+        mod.Riz32 = Riz32
+        mod.Riz33 = Riz33
+        mod.Riz34 = Riz34
+        mod.Riz35 = Riz35
+        mod.Riz36 = Riz36
+        mod.Riz37 = Riz37
+        mod.Riz38 = Riz38
+        mod.Riz39 = Riz39
+        mod.Riz40 = Riz40
+        mod.DEV = DEV
+        mod.SUDO_USERS = SUDO_USERS
+        spec.loader.exec_module(mod)
+        sys.modules["assistant.plugins." + shortname] = mod
+        print("• XSpam Assistant imported:" + shortname)
+
+# ==== Path ==== #
 
 path = "plugins/*.py"
 files = glob.glob(path)
