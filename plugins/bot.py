@@ -321,7 +321,7 @@ async def spam(e):
                    await smex.reply(message)
                 else:
                    await e.client.send_message(rizol, message)
-                    await asyncio.sleep(0.4)
+                   await asyncio.sleep(0.4)
         elif e.reply_to_msg_id and smex.media:
             counter = int(RizoelOk[0])
             sleeptime = float(Rizoel[0])
