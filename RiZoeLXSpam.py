@@ -1387,6 +1387,7 @@ loop.run_until_complete(logss())
 # Plugins Load Def
 
 import importlib
+from importlib import util
 from pathlib import Path
 import inspect
 import re
@@ -1395,8 +1396,8 @@ import re
 def _plugins(shortname):
         path = Path(f"plugins/{shortname}.py")
         name = "plugins.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
+        spec = util.spec_from_file_location(name, path)
+        mod = util.module_from_spec(spec)
         mod.Riz = Riz
         mod.logger = logging.getLogger(shortname)
         # auto-load
@@ -1456,11 +1457,11 @@ def Start_Assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-
+        from importlib import util
         path = Path(f"assistant/{shortname}.py")
         name = "assistant.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
+        spec = util.spec_from_file_location(name, path)
+        mod = util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("Checking Bot Token......")
         print("Starting Bot")
@@ -1468,11 +1469,11 @@ def Start_Assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-
+        from importlib import util
         path = Path(f"assistant/{shortname}.py")
         name = "assistant.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
+        spec = util.spec_from_file_location(name, path)
+        mod = util.module_from_spec(spec)
         mod.RiZoeL = RiZoeL
         mod.Riz = Riz
         mod.Riz2 = Riz2
@@ -1527,11 +1528,11 @@ def load_Assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-
+        from importlib import util
         path = Path(f"assistant/plugins/{shortname}.py")
         name = "assistant.plugins.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
+        spec = util.spec_from_file_location(name, path)
+        mod = util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("> Loading Spam Assistant < \n")
         print("• XSpam Assistant Imported:" + shortname)
@@ -1539,11 +1540,11 @@ def load_Assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-
+        from importlib import util
         path = Path(f"assistant/plugins/{shortname}.py")
         name = "assistant.plugins.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
+        spec = util.spec_from_file_location(name, path)
+        mod = util.module_from_spec(spec)
         mod.RiZoeL = RiZoeL
         mod.Riz = Riz
         mod.Riz2 = Riz2
