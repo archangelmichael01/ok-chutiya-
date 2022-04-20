@@ -8,7 +8,7 @@ import inspect
 import re
 
 
-def load_plugins(shortname):
+def _plugins(shortname):
         path = Path(f"plugins/{shortname}.py")
         name = "plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
