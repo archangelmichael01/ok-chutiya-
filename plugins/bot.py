@@ -382,5 +382,5 @@ async def spammer(event):
     for q in range(tot):
         for p in range(100):
             await event.client.send_message(event.chat_id, spam_message)
-        a = a + 2
-        await asyncio.sleep(a)
+            a = a + 2
+            await asyncio.sleep(a)
