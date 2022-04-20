@@ -67,7 +67,7 @@ def load_plugins(shortname):
 
 
 async def edit_or_reply(event, text):
-    if event.sender_id in SUDO_USERS or event.sender_id kn DEV:
+    if event.sender_id in SUDO_USERS or event.sender_id in DEV:
         reply_to = await event.get_reply_message()
         if reply_to:
             return await reply_to.reply(text)
