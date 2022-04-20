@@ -10,7 +10,7 @@ from sys import argv
 from pathlib import Path
 import logging
 import time
-from resources.utils import load_plugins, load_Assistant, Start_Assistant
+from resources.utils import _plugins, load_Assistant, Start_Assistant
 import telethon.utils
 from telethon.tl import functions
 from telethon import TelegramClient, events
@@ -1393,7 +1393,7 @@ for name in files:
     with open(name) as a:
         patt = Path(a.name)
         plugin_name = patt.stem
-        load_plugins(plugin_name.replace(".py", ""))
+        _plugins(plugin_name.replace(".py", ""))
 
 if BOT_TOKEN:
     print("Setting up Assisting Bot")
