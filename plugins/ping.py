@@ -76,8 +76,8 @@ def get_readable_time(seconds: int) -> str:
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 async def ping(e):
-    if e.sender_id not in SUDO_USERS:
-        return
+    if e.sender_id not in SUDO_USERS e.sender_id not in DEV:
+         return
     if e.reply_to_msg_id:
         fuk = await e.respond("Pᴏɴɢ!!.....", reply_to=e.reply_to_msg_id)
     else:
@@ -105,9 +105,8 @@ rizoel += f"┣➣ **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelve
                                     
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%salive" % hl))
 async def alive(event):
-    if event.sender_id not in SUDO_USERS:
-        return
-    await Riz.send_file(event.chat_id,
+  if event.sender_id in SUDO_USERS:
+      await Riz.send_file(event.chat_id,
                                   RIZ_PIC,
                                   caption=rizoel)
    
