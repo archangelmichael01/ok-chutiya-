@@ -15,7 +15,7 @@ from time import time
 from datetime import datetime
 import telethon.utils
 from telethon.tl import functions, types
-from telethon import TelegramClient, events
+from telethon import TelegramClient, events, version
 from telethon.sessions import StringSession
 from decouple import config
 from os import getenv
@@ -3862,11 +3862,11 @@ def Start_Assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-
+        import importlib import util
         path = Path(f"assistant/{shortname}.py")
         name = "assistant.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
+        spec = util.spec_from_file_location(name, path)
+        mod = util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("Checking Bot Token......")
         print("Starting Bot")
@@ -3874,11 +3874,11 @@ def Start_Assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-
+        import importlib import util
         path = Path(f"assistant/{shortname}.py")
         name = "assistant.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
+        spec = util.spec_from_file_location(name, path)
+        mod = util.module_from_spec(spec)
         mod.RiZoeL = RiZoeL
         mod.Riz = Riz
         mod.Riz2 = Riz2
@@ -3933,11 +3933,11 @@ def load_Assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-
+        import importlib import util
         path = Path(f"assistant/plugins/{shortname}.py")
         name = "assistant.plugins.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
+        spec = util.spec_from_file_location(name, path)
+        mod = util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("> Loading Spam Assistant < \n")
         print("• XSpam Assistant Imported:" + shortname)
@@ -3945,11 +3945,11 @@ def load_Assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-
+        import importlib import util
         path = Path(f"assistant/plugins/{shortname}.py")
         name = "assistant.plugins.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
+        spec = util.spec_from_file_location(name, path)
+        mod = util.module_from_spec(spec)
         mod.RiZoeL = RiZoeL
         mod.Riz = Riz
         mod.Riz2 = Riz2
