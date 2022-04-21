@@ -369,18 +369,20 @@ async def timespam(e):
 async def spammer(event):
     if event.sender_id not in SUDO_USERS or event.sender_id not in DEV:
           return
-    msg_ = event.text[7:]
-    counter = int(msg_.split(" ")[0])
-    reply_msg = await event.get_reply_message()
-    if reply_msg:
-        spam_message = reply_msg
-    else:
-        spam_message = msg_.replace(str(counter), "")
-    rd = int(counter % 100)
-    tot = int((counter - rd )/100)
-    a = 30
-    for q in range(tot):
-        for p in range(100):
-            await event.client.send_message(event.chat_id, spam_message)
-            a = a + 2
-            await asyncio.sleep(a)
+    Rizoel = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
+    if len(Rizoel) == 2:
+       message = str(Rizoel[1])
+       counter = int(Rizoel[0])
+       reply_msg = await event.get_reply_message()
+       if reply_msg:
+          spam_message = reply_msg
+       else:
+           spam_message = message
+       rd = int(counter % 100)
+       tot = int((counter - rd )/100)
+       a = 30
+       for q in range(tot):
+           for p in range(100):
+               await event.client.send_message(event.chat_id, spam_message)
+               a = a + 2
+               await asyncio.sleep(a)
