@@ -300,9 +300,9 @@ async def spam(e):
 @Riz18.on(events.NewMessage(incoming=True, pattern=r"\%stspam" % hl))
 @Riz19.on(events.NewMessage(incoming=True, pattern=r"\%stspam" % hl))
 @Riz20.on(events.NewMessage(incoming=True, pattern=r"\%stspam" % hl))
-async def spam(e):
+async def timespam(e):
     usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **Time Spam**\n\nCommand:\n\n`{hl}tspam` <time in seconds> <count> <message to spam>\n\n`{hl}tspam` <time in Seconds> <count> <reply to a message>"     
-    e.chat_id = rizol
+    rizol = e.chat_id
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
