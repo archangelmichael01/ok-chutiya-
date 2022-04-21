@@ -76,7 +76,7 @@ def get_readable_time(seconds: int) -> str:
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 async def ping(e):
-    if e.sender_id not in SUDO_USERS e.sender_id not in DEV:
+    if e.sender_id not in SUDO_USERS or e.sender_id not in DEV:
          return
     if e.reply_to_msg_id:
         fuk = await e.respond("Pᴏɴɢ!!.....", reply_to=e.reply_to_msg_id)
