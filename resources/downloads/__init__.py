@@ -1,0 +1,1 @@
+""" RiZoeL X Spam - © TheRiZoeL """ 
