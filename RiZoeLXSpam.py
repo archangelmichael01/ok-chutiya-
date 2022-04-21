@@ -4021,6 +4021,11 @@ loop.run_until_complete(logss())
 print("RiZoeL X Spam Successfully deployed -!")
 print("Enjoy! Do visit @RiZoeLX")
 
+
+
+if __name__ == "__main__":
+    RiZoeL.run_until_disconnected()
+
 if len(argv) not in (1, 3, 4):
     try:
         Riz.disconnect()
