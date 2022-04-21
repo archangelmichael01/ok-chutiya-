@@ -3862,7 +3862,7 @@ def Start_Assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-        import importlib import util
+        from importlib import util
         path = Path(f"assistant/{shortname}.py")
         name = "assistant.{}".format(shortname)
         spec = util.spec_from_file_location(name, path)
@@ -3874,7 +3874,7 @@ def Start_Assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-        import importlib import util
+        from importlib import util
         path = Path(f"assistant/{shortname}.py")
         name = "assistant.{}".format(shortname)
         spec = util.spec_from_file_location(name, path)
@@ -3933,7 +3933,7 @@ def load_Assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-        import importlib import util
+        from importlib import util
         path = Path(f"assistant/plugins/{shortname}.py")
         name = "assistant.plugins.{}".format(shortname)
         spec = util.spec_from_file_location(name, path)
@@ -3945,7 +3945,7 @@ def load_Assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-        import importlib import util
+        from importlib import util
         path = Path(f"assistant/plugins/{shortname}.py")
         name = "assistant.plugins.{}".format(shortname)
         spec = util.spec_from_file_location(name, path)
