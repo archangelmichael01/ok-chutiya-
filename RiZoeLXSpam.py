@@ -2225,7 +2225,7 @@ async def propic(event):
             os.remove(media)
         except Excepion as e:
             print(str(e))
-     except Excepion as e::
+     except Excepion as e:
          print(e)
 
 # Spam Plugins
