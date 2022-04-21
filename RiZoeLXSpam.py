@@ -3997,7 +3997,6 @@ def load_Assistant(shortname):
         sys.modules["assistant.plugins." + shortname] = mod
         print("• XSpam Assistant imported:" + shortname)
 
-# path
 if BOT_TOKEN:
     print("Setting up Assisting Bot")
     path = "assistant/*.py"
@@ -4017,7 +4016,6 @@ if BOT_TOKEN:
             shortname = path1.stem
             load_Assistant(shortname.replace(".py", ""))
     print("Assisting Bot set up completely!")
-
 
 loop.run_until_complete(logss())
 print("RiZoeL X Spam Successfully deployed -!")
