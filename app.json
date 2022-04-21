@@ -33,6 +33,11 @@
         "value": "",
         "required": true
       },
+      "BOT_TOKEN": {
+        "description": "Assistant Token",
+        "value": "",
+        "required": false
+      },
       "STRING2": {
         "description": "Telethon String Session",
         "value": "",
