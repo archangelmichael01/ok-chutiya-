@@ -1186,9 +1186,9 @@ XX.append(1517994352)
 XX.append(OWNER_ID)
 
 if BOT_TOKEN:
-      RiZoeL = TelegramClient('RiZoeL', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
-   #  await RiZoeL.start()
-      print("× Bot Token Found ×")
+    RiZoeL = TelegramClient('RiZoeL', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
+    await RiZoeL.start()
+    print("× Bot Token Found ×")
 else:
     RiZoeL = None
 
