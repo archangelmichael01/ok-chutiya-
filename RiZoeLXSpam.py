@@ -2298,7 +2298,7 @@ async def spam(e):
             if re.search(TheRiZoeL.lower(), message.lower()):
                 return await e.reply("**Sorry !!** I can't Spam On @RiZoeLX's owner")
             if int(e.chat_id) in GROUP:
-                return await e.reply(t"Sorry !! I can't spam here")
+                return await e.reply("Sorry !! I can't spam here")
             counter = int(Rizoel[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None)
@@ -2306,7 +2306,7 @@ async def spam(e):
         elif e.reply_to_msg_id and smex.media:
             counter = int(Rizoel[0])
             if int(e.chat_id) in GROUP:
-                 return await e.reply(t"Sorry !! I can't spam here")
+                 return await e.reply("Sorry !! I can't spam here")
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None)
             for _ in range(counter):
@@ -2376,7 +2376,7 @@ async def bigspam(e):
             if re.search(TheRiZoeL.lower(), message.lower()):
                 return await e.reply("**Sorry !!** I can't Spam On @RiZoeLX's owner")
             if int(e.chat_id) in GROUP:
-                 return await e.reply(t"Sorry !! I can't spam here")
+                 return await e.reply("Sorry !! I can't spam here")
             counter = int(rizoel[0])
             for _ in range(counter):
                 if e.reply_to_msg_id:
@@ -2386,6 +2386,8 @@ async def bigspam(e):
                 await asyncio.sleep(0.3)
         elif e.reply_to_msg_id and smex.media:  
             counter = int(rizoel[0])
+            if int(e.chat_id) in GROUP:
+                return await e.reply("Sorry !! I can't spam here")
             for _ in range(counter):
                smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
                await gifspam(e, smex) 
@@ -2395,7 +2397,7 @@ async def bigspam(e):
             if re.search(TheRiZoeL.lower(), message.lower()):
                 return await e.reply("**Sorry !!** I can't Spam On @RiZoeLX's owner")
             if int(e.chat_id) in GROUP:
-                return await e.reply(t"Sorry !! I can't spam here")
+                return await e.reply("Sorry !! I can't spam here")
             counter = int(rizoel[0])
             for _ in range(counter):
                await e.client.send_message(e.chat_id, message)
@@ -2458,7 +2460,7 @@ async def delayspam(e):
                 return await e.reply("**Sorry !!** I can't Spam On @RiZoeLX's owner")
             counter = int(Rizoelsexy[0])
             if int(e.chat_id) in GROUP:
-                return await e.reply(t"Sorry !! I can't spam here")
+                return await e.reply("Sorry !! I can't spam here")
             sleeptime = float(Rizoel[0])
             for _ in range(counter):
                 if e.reply_to_msg_id:
@@ -2469,7 +2471,7 @@ async def delayspam(e):
         elif e.reply_to_msg_id and smex.media:
             counter = int(Rizoelsexy[0])
             if int(e.chat_id) in GROUP:
-                   return await e.reply(t"Sorry !! I can't spam here")
+                   return await e.reply("Sorry !! I can't spam here")
             sleeptime = float(Rizoel[0])
             for _ in range(counter):
                 smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
@@ -2481,7 +2483,7 @@ async def delayspam(e):
                 return await e.reply("**Sorry !!** I can't Spam On @RiZoeLX's owner")
             counter = int(Rizoelsexy[0])
             if int(e.chat_id) in GROUP:
-                 return await e.reply(t"Sorry !! I can't spam here")
+                 return await e.reply("Sorry !! I can't spam here")
             sleeptime = float(Rizoel[0])
             for _ in range(counter):
                  await e.client.send_message(e.chat_id, message)
@@ -2595,7 +2597,7 @@ async def packspam(e):
         try:
             x = await e.get_reply_message()
             if int(e.chat_id) in GROUP:
-                 return await e.reply(t"Sorry !! I can't spam here")
+                 return await e.reply("Sorry !! I can't spam here")
             if not (x and x.media and hasattr(x.media, "document")):
                 return await e.reply("`Reply To Sticker Only.`")
             set = x.document.attributes[1]
@@ -3302,7 +3304,7 @@ async def raid(e):
         if len(RiZoeL) == 2:
             user = str(RiZoeL[1])
             if int(e.chat_id) in GROUP:
-                return await e.reply(t"Sorry !! I can't spam here")
+                return await e.reply("Sorry !! I can't spam here")
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in RiZoeLX:
@@ -3329,7 +3331,7 @@ async def raid(e):
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
             if int(e.chat_id) in GROUP:
-                return await e.reply(t"Sorry !! I can't spam here")
+                return await e.reply("Sorry !! I can't spam here")
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             if int(g) in RiZoeLX:
@@ -3633,7 +3635,7 @@ async def delayraid(event):
          if len(RiZoeL) == 3:
              user = str(RiZoeL[2])
              if int(event.chat_id) in GROUP:
-                  return await event.reply(t"Sorry !! I can't spam here")
+                  return await event.reply("Sorry !! I can't spam here")
              a = await event.client.get_entity(user)
              e = a.id
              if int(e) in RiZoeLX:
@@ -3661,7 +3663,7 @@ async def delayraid(event):
          elif event.reply_to_msg_id:
                a = await event.get_reply_message()
                if int(event.chat_id) in GROUP:
-                  return await event.reply(t"Sorry !! I can't spam here")
+                  return await event.reply("Sorry !! I can't spam here")
                b = await event.client.get_entity(a.sender_id)
                e = b.id
                if int(e) in RiZoeLX:
