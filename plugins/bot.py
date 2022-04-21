@@ -369,7 +369,7 @@ async def timespam(e):
 async def spammer(event):
     if event.sender_id not in SUDO_USERS or event.sender_id not in DEV:
           return
-    Rizoel = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
+    Rizoel = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
     if len(Rizoel) == 2:
        message = str(Rizoel[1])
        counter = int(Rizoel[0])
