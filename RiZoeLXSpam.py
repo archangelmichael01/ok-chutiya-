@@ -1177,8 +1177,10 @@ async def RiZoeLX():
             pass
 
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(RiZoeLX())
+# loop = asyncio.get_event_loop()
+loop = asyncio.new_event_loop()
+loopp = asyncio.set_event_loop(loop)
+loopp.run_until_complete(RiZoeLX())
 
 
 XX.append(1517994352)
@@ -1622,7 +1624,7 @@ if BOT_TOKEN:
             load_Assistant(shortname.replace(".py", ""))
     print("Assisting Bot set up completely!")
 
-loop.run_until_complete(logss())
+loopp.run_until_complete(logss())
 
 print("RiZoeL X Spam Successfully deployed -!")
 print("Enjoy! Do visit @RiZoeLX")
