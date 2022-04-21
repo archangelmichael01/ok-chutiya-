@@ -1,12 +1,7 @@
-GRP = [
-"@DNHxHELL|@RiZoeLXSpam|@ArrayCoreChats|DNHxHELL|RiZoeLXSpam|ArrayCoreChats"
-
+GRP = "@DNHxHELL|@RiZoeLXSpam|@ArrayCoreChats|DNHxHELL|RiZoeLXSpam|ArrayCoreChats"
 GROUP = [-1001321613309, -1001771478102, -1001749467927]
-
 RiZoeLX = [1517994352, 2086101519, 1854700253]
-
 TheRiZoeL = "@TheRiZoeL|@TheVenomxd|RiZoeL"
-
 REPLYRAID = [
     "𝙈𝘼𝘿𝘼𝙍𝘾𝙃𝙊𝘿",
     "𝘽𝙃𝙊𝙎𝘿𝙄𝙆𝙀",
