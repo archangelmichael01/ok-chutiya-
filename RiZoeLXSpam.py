@@ -1179,9 +1179,11 @@ async def RiZoeLX():
 
 # loop = asyncio.get_event_loop()
 loop = asyncio.new_event_loop()
-loopp = asyncio.set_event_loop(loop)
-loopp.run_until_complete(RiZoeLX())
-
+try:
+   loopp = asyncio.set_event_loop(loop)
+   loopp.run_until_complete(RiZoeLX())
+except Exception as e:
+   print(e)
 
 XX.append(1517994352)
 XX.append(OWNER_ID)
