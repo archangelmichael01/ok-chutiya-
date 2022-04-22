@@ -56,7 +56,7 @@ async def spam(event):
         if re.search(TheRiZoeL.lower(), message.lower()):
                    return await rizx.send_message("Sorry !! I can't Spam On @RiZoeLX's Owner")
         Fukoff = await rizx.send_message(f"__Starting Spam In {Group}__")
-        spam_text = f"{hl}gspam {count} {grp_id} {message}"
+        spam_text = f"{hl}gspam {count} {Group} {message}"
         try:
                  if Riz:
                        await Riz(functions.channels.JoinChannelRequest(channel=Group))
