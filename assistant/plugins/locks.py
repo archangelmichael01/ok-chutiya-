@@ -1,5 +1,6 @@
 from telethon import events, Button, types
 from resources.event import *
+from assistant import RiZoeL
 
 @RiZoeL.on(events.NewMessage(pattern="^[!?/]lock ?(.*)"))
 @is_admin
