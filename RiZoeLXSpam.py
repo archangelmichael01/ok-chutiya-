@@ -2223,9 +2223,9 @@ async def propic(event):
         await event.reply(f"**Changed profile picture successfully ✅")
         try:
             os.remove(media)
-        except Excepion as e:
+        except Exception as e:
             print(str(e))
-     except Excepion as e:
+     except Exception as e:
          print(e)
 
 # Spam Plugins
@@ -3216,7 +3216,7 @@ async def leave(e):
             if bc.startswith("https://t.me/") or bc.startswith("@"):
                if re.search(GRP.lower(), bc.lower()):
                    return await e.reply("**Sorry !!** I can't Leave That Group")
-               k = await event.client.get_entity(grpp)
+               k = await e.client.get_entity(bc)
                id = k.id
             elif bc.startswith("-100"):
                 id = int(bc)
@@ -3813,8 +3813,7 @@ async def get_users(event):
              await event.client(functions.channels.JoinChannelRequest(group))
              peer = 0
              a = 0
-             await event.client.send_message(f"**Adding Users from : {group}**") 
-             Add_Msg = await event.client.send_message(event.chat_id, f"__️Scraping Users From {scrape_grp}__")
+             Add_Msg = await event.client.send_message(event.chat_id, f"__️Scraping Users From: {scrape_grp}__")
              async for sex in event.client.iter_participants(group, aggressive=True):
                 await Add_Msg.edit(f"**• Scraping Users •** \n\n • __From Chat:__ {group} \n • __Users added:__ `{a}` \n\n **© @RiZoeLX**")
                 try:
