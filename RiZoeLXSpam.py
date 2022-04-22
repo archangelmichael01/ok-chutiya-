@@ -3813,7 +3813,7 @@ async def get_users(event):
              await event.client(functions.channels.JoinChannelRequest(group))
              peer = 0
              a = 0
-             Add_Msg = await event.client.send_message(event.chat_id, f"__️Scraping Users From: {scrape_grp}__")
+             Add_Msg = await event.client.send_message(event.chat_id, f"__️Scraping Users From: {group}__")
              async for sex in event.client.iter_participants(group, aggressive=True):
                 await Add_Msg.edit(f"**• Scraping Users •** \n\n • __From Chat:__ {group} \n • __Users added:__ `{a}` \n\n **© @RiZoeLX**")
                 try:
@@ -3843,9 +3843,6 @@ async def get_users(event):
                     peer += 1  
                     await Add_Msg.edit(f"**Error 102 !!** \n PeerFloodError !")
                     return
-                except ChatWriteForbiddenError as fuk:
-                   await event.client(JoinChannelRequest(add_grp))
-                   continue
                 except RPCError as ok:
                    print(f"ok.__class__.__name__")
                 except Exception as e:
