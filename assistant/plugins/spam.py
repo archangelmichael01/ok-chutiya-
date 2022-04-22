@@ -33,7 +33,7 @@ async def spam(event):
         elif grpp.startswith("https://t.me/"):
             hash = grpp.split('/t.me/')[1]
             Group = "@" + grpp
-         try:
+        try:
              if Riz:
                   await Riz(functions.channels.JoinChannelRequest(channel=Group))
              if Riz2:
@@ -114,7 +114,7 @@ async def spam(event):
                   await Riz39(functions.channels.JoinChannelRequest(channel=Group))
              if Riz40:
                   await Riz40(functions.channels.JoinChannelRequest(channel=Group))
-         except Exception as ex:
+        except Exception as ex:
                 print(ex)
         else:
             await rizx.send_message("Error! Send Group link or Username")
