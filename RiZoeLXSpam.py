@@ -30,7 +30,6 @@ from telethon.errors.rpcerrorlist import PhoneCodeExpiredError, PhoneCodeInvalid
 from telethon.tl.types import Channel, Chat, InputPhoto, User
 from telethon.tl.functions.account import UpdateProfileRequest
 from telethon.tl.functions.photos import UploadProfilePhotoRequest
-from assistant import RiZoeL
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
@@ -1191,6 +1190,7 @@ async def logss():
      Log_msg = "**🔶 RiZoeL X Spam Started 🔶 **\n\n"
      Log_msg += f"• **Owner:** [{owner}](tg://user?id={owner})"
      if BOT_TOKEN:
+        from assistant import RiZoeL
         Findme = await RiZoeL.get_me()
         Name = Findme.first_name
         username = Findme.username
