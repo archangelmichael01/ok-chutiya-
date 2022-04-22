@@ -3869,7 +3869,6 @@ def Start_Assistant(shortname):
         name = "assistant.{}".format(shortname)
         spec = util.spec_from_file_location(name, path)
         mod = util.module_from_spec(spec)
-        mod.RiZoeL = RiZoeL
         mod.Riz = Riz
         mod.Riz2 = Riz2
         mod.Riz3 = Riz3
@@ -3940,7 +3939,6 @@ def load_Assistant(shortname):
         name = "assistant.plugins.{}".format(shortname)
         spec = util.spec_from_file_location(name, path)
         mod = util.module_from_spec(spec)
-        mod.RiZoeL = RiZoeL
         mod.Riz = Riz
         mod.Riz2 = Riz2
         mod.Riz3 = Riz3
