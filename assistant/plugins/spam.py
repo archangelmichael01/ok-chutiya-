@@ -141,8 +141,8 @@ async def spam(event):
         Fukoff = await rizx.send_message(f"__Starting Spam In {Group}__")
         spam_text = f"{hl}gspam {count} {grp_id} {message}"
         async for sex in CLIENTS:
-        try:
-            await RiZoeL.send_message([sex], spam_text)
-        except Exception as ex:
-                print(ex)
+           try:
+               await RiZoeL.send_message([sex], spam_text)
+           except Exception as ex:
+               print(ex)
         await Fukoff.edit(f"**▪️Started Spam ▪️** \n\n__Group__ : `{Group}`\n__Spam Count__ : `{count}` \n__Spam Message__ : `{message}`")
