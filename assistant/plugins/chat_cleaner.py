@@ -2,7 +2,7 @@ from telethon import events, Button
 from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChannelParticipantsAdmins, ChatBannedRights
-
+from assistant import RiZoeL
 from resources.event import *
 
 
