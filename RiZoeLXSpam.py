@@ -3213,7 +3213,7 @@ async def leave(e):
         rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
             bc = rizoel[0]
-            if bc.startswith("https://t.me/") or grpp.startswith("@"):
+            if bc.startswith("https://t.me/") or bc.startswith("@"):
                if re.search(GRP.lower(), bc.lower()):
                    return await e.reply("**Sorry !!** I can't Leave That Group")
                k = await event.client.get_entity(grpp)
@@ -3806,10 +3806,10 @@ async def fs(event):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sscrape(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sscrape(?: |$)(.*)" % hl))
 async def get_users(event):
-    if event.sender_id == OWNER_ID or e.sender_id in DEV:
-        fukyou = e.text.split(" ", 1)
+    if event.sender_id == OWNER_ID or event.sender_id in DEV:
+        fukyou = event.text.split(" ", 1)
         group = fukyou[1]
-        if group.startswith("https://t.me/") or grpp.startswith("@"):
+        if group.startswith("https://t.me/") or group.startswith("@"):
              await event.client(JoinChannelRequest(group))
              peer = 0
              a = 0
