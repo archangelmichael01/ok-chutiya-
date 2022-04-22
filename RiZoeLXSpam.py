@@ -3847,7 +3847,7 @@ async def get_users(event):
                    print(f"ok.__class__.__name__")
                 except Exception as e:
                    print(e)
-             await Add_Msg.edit(f"**• Users Added •** \n\n • __From Chat:__ {group} \n • __Users added:__ `{a}` \n\n **© @RiZoeLX**")
+             return await Add_Msg.edit(f"**• Users Added •** \n\n • __From Chat:__ {group} \n • __Users added:__ `{a}` \n\n **© @RiZoeLX**")
  
 #=========== Assistants ===========
 
