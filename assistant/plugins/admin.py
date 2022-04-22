@@ -4,7 +4,7 @@ from telethon.tl.functions.channels import EditAdminRequest
 from telethon.tl.types import ChatAdminRights
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.functions.messages import ExportChatInviteRequest
-
+from assistant import RiZoeL
 
 @RiZoeL.on(events.NewMessage(pattern="^[!?/]promote ?(.*)"))
 @is_admin
