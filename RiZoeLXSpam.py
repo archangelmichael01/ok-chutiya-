@@ -3036,9 +3036,9 @@ async def gspam(e):
       rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 2)
       Rizoelsexy = rizoel[1:]
       if len(Rizoelsexy) == 2:
-         counter = int(Rizoelsexy[0])
-         Grp = str(Rizoelsexy[1])
-         message = str(rizoel[0])
+         message = str(Rizoelsexy[1])
+         Grp = str(Rizoelsexy[0])
+         counter = int(rizoel[0])
          for _ in range(counter):
               await e.client.send_message(Grp, message)
               await asyncio.sleep(0.3)
