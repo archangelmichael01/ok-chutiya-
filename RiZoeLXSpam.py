@@ -2226,7 +2226,7 @@ async def propic(event):
             media = await Rizoel.download_media("resources/downloads/")
         except:
             pass
-        await client(UploadProfilePhotoRequest(await client.upload_file(media)))
+        await event.client(UploadProfilePhotoRequest(await event.client.upload_file(media)))
         await event.reply(f"**Changed profile picture successfully ✅")
         try:
             os.remove(media)
