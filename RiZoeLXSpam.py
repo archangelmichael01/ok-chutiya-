@@ -30,6 +30,7 @@ from telethon.errors.rpcerrorlist import PhoneCodeExpiredError, PhoneCodeInvalid
 from telethon.tl.types import Channel, Chat, InputPhoto, User
 from telethon.tl.functions.account import UpdateProfileRequest
 from telethon.tl.functions.photos import UploadProfilePhotoRequest
+from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
@@ -1186,8 +1187,14 @@ XX.append(1517994352)
 XX.append(OWNER_ID)
 
 if BOT_TOKEN:
-    RiZoeL = TelegramClient('TheRiZoeL', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
-   # await RiZoeL.start()
+    RiZoeL = TelegramClient(
+    session="RiZoeL-Bot",
+    api_id=APP_ID,
+    api_hash=API_HASH,
+    connection=ConnectionTcpAbridged,
+    auto_reconnect=True,
+    connection_retries=None,
+    ).start(bot_token=BOT_TOKEN)
     print("× Bot Token Found ×")
 else:
     RiZoeL = None
