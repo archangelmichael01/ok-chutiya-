@@ -3810,7 +3810,7 @@ async def get_users(event):
         fukyou = event.text.split(" ", 1)
         group = fukyou[1]
         if group.startswith("https://t.me/") or group.startswith("@"):
-             await event.client(JoinChannelRequest(group))
+             await event.client(functions.channels.JoinChannelRequest(group))
              peer = 0
              a = 0
              await event.client.send_message(f"**Adding Users from : {group}**") 
