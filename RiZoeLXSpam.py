@@ -92,7 +92,9 @@ DEV.append(OWNER_ID)
 CLIENTS = []
 XX = [1517994352]
 XX.append(OWNER_ID)
+
 # Sessions
+
 async def RiZoeLX():
     global Riz
     global Riz2
@@ -146,8 +148,8 @@ async def RiZoeLX():
             await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_1 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_1)
         except Exception as e:
             Riz = "STRING"
             print(e)
@@ -172,8 +174,8 @@ async def RiZoeLX():
             await Riz2(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz2(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz2.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_3 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_2)
         except Exception as e:
             print(e)
             pass
@@ -198,8 +200,8 @@ async def RiZoeLX():
             await Riz3(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz3(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz3.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_3 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_3)
         except Exception as e:
             print(e)
             pass
@@ -224,8 +226,8 @@ async def RiZoeLX():
             await Riz4(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz4(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz4.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_4 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_4)
         except Exception as e:
             print(e)
             pass
@@ -250,8 +252,8 @@ async def RiZoeLX():
             await Riz5(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz5(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz5.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_5 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_5)
         except Exception as e:
             print(e)
             pass
@@ -276,8 +278,8 @@ async def RiZoeLX():
             await Riz6(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz6(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz6.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_6 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_6)
         except Exception as e:
             print(e)
             pass
@@ -302,8 +304,8 @@ async def RiZoeLX():
             await Riz7(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz7(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz7.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_7 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_7)
         except Exception as e:
             print(e)
             pass
@@ -329,8 +331,8 @@ async def RiZoeLX():
             await Riz8(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz8(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz8.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_8 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_8)
         except Exception as e:
             print(e)
             pass
@@ -355,8 +357,8 @@ async def RiZoeLX():
             await Riz9(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz9(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz9.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_9 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_9)
         except Exception as e:
             print(e)
             pass
@@ -382,8 +384,8 @@ async def RiZoeLX():
             await Riz10(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz10(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz10.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_10 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_10)
         except Exception as e:
             print(e)
             pass
@@ -409,8 +411,8 @@ async def RiZoeLX():
             await Riz11(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz11(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz11.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_11 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_11)
         except Exception as e:
             print(e)
             pass
@@ -436,8 +438,8 @@ async def RiZoeLX():
             await Riz12(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz12(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz12.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_12 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_12)
         except Exception as e:
             print(e)
             pass
@@ -463,8 +465,8 @@ async def RiZoeLX():
             await Riz13(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz13(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz13.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_13 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_13)
         except Exception as e:
             print(e)
             pass
@@ -490,8 +492,8 @@ async def RiZoeLX():
             await Riz14(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz14(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz14.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_14 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_14)
         except Exception as e:
             print(e)
             pass
@@ -517,8 +519,8 @@ async def RiZoeLX():
             await Riz15(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz15(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz15.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_15 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_15)
         except Exception as e:
             print(e)
             pass
@@ -544,8 +546,8 @@ async def RiZoeLX():
             await Riz16(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz16(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz16(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_16 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_16)
         except Exception as e:
             print(e)
             pass
@@ -569,8 +571,8 @@ async def RiZoeLX():
             await Riz17(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz17(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz17(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_17 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_17)
         except Exception as e:
             print(e)
             pass
@@ -594,8 +596,8 @@ async def RiZoeLX():
             await Riz18(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz18(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz18(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_18 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_18)
         except Exception as e:
             print(e)
             pass
@@ -619,8 +621,8 @@ async def RiZoeLX():
             await Riz19(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz19(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz19(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_19 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_19)
         except Exception as e:
             print(e)
             pass
@@ -644,8 +646,8 @@ async def RiZoeLX():
             await Riz20(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz20(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz20(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_20 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_20)
         except Exception as e:
             print(e)
             pass
@@ -669,8 +671,8 @@ async def RiZoeLX():
             await Riz21(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz21(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz21(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_21 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_21)
         except Exception as e:
             print(e)
             pass
@@ -694,8 +696,8 @@ async def RiZoeLX():
             await Riz22(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz22(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz22.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_22 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_22)
         except Exception as e:
             print(e)
             pass
@@ -720,8 +722,8 @@ async def RiZoeLX():
             await Riz23(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz23(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz23.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_23 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_23)
         except Exception as e:
             print(e)
             pass
@@ -746,8 +748,8 @@ async def RiZoeLX():
             await Riz24(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz24(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz24.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_24 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_24)
         except Exception as e:
             print(e)
             pass
@@ -772,8 +774,8 @@ async def RiZoeLX():
             await Riz25(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz25(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz25.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_25 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_25)
         except Exception as e:
             print(e)
             pass
@@ -798,8 +800,8 @@ async def RiZoeLX():
             await Riz26(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz26(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz26.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_26 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_26)
         except Exception as e:
             print(e)
             pass
@@ -824,8 +826,8 @@ async def RiZoeLX():
             await Riz27(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz27(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz27.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_27 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_27)
         except Exception as e:
             print(e)
             pass
@@ -851,8 +853,8 @@ async def RiZoeLX():
             await Riz28(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz28(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz28.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_28 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_28)
         except Exception as e:
             print(e)
             pass
@@ -877,8 +879,8 @@ async def RiZoeLX():
             await Riz29(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz29(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz29.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_29 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_29)
         except Exception as e:
             print(e)
             pass
@@ -904,8 +906,8 @@ async def RiZoeLX():
             await Riz30(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz30(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz30.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_30 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_30)
         except Exception as e:
             print(e)
             pass
@@ -931,8 +933,8 @@ async def RiZoeLX():
             await Riz31(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz31(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz31.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_31 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_31)
         except Exception as e:
             print(e)
             pass
@@ -958,8 +960,8 @@ async def RiZoeLX():
             await Riz32(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz32(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz32.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_32 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_32)
         except Exception as e:
             print(e)
             pass
@@ -985,8 +987,8 @@ async def RiZoeLX():
             await Riz33(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz33(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz33.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_33 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_33)
         except Exception as e:
             print(e)
             pass
@@ -1012,8 +1014,8 @@ async def RiZoeLX():
             await Riz34(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz34(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz34.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_34 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_34)
         except Exception as e:
             print(e)
             pass
@@ -1039,8 +1041,8 @@ async def RiZoeLX():
             await Riz35(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz35(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz35.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_35 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_35)
         except Exception as e:
             print(e)
             pass
@@ -1066,8 +1068,8 @@ async def RiZoeLX():
             await Riz36(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz36(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz36(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_36 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_36)
         except Exception as e:
             print(e)
             pass
@@ -1091,8 +1093,8 @@ async def RiZoeLX():
             await Riz37(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz37(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz37(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_37 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_37)
         except Exception as e:
             print(e)
             pass
@@ -1116,8 +1118,8 @@ async def RiZoeLX():
             await Riz38(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz38(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz38(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_38 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_38)
         except Exception as e:
             print(e)
             pass
@@ -1141,8 +1143,8 @@ async def RiZoeLX():
             await Riz39(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz39(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz39(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_39 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_39)
         except Exception as e:
             print(e)
             pass
@@ -1166,8 +1168,8 @@ async def RiZoeLX():
             await Riz40(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz40(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz40(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
+            id_40 = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(id_40)
         except Exception as e:
             print(e)
             pass
