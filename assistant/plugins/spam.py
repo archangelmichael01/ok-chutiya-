@@ -4,17 +4,15 @@ import random
 import re
 from telethon import events
 from datetime import datetime
-from resources.data import GRP, PORMS, GROUP, RiZoeLX
+from resources.data import *
 from telethon.tl import functions
 from RiZoeLXSpam import OWNER_ID, hl, CLIENTS
+from assistant import RiZoeL
 
 SEND_GRP = "**Send Group Link Where You want to spam**"
 SEND_COUNT ="**Send Counts**"
 SEND_SPAM = "**Send spam message to spam**"
 ABORT = "**All process Cancelled !**"
-GROUPP = "@DNHxHELL|@RiZoeLXSpam"
-TheRiZoeL = "@TheRiZoeL|@TheVenomXD"
-
 
 @RiZoeL.on(events.NewMessage(pattern="[!/]spam"))
 async def spam(event):
@@ -31,7 +29,7 @@ async def spam(event):
         grpp = res.message.message
         if grpp.startswith("https://t.me/") or grpp.startswith("@"):
               Group = grpp
-              if re.search(GROUPP.lower(), Group.lower()):
+              if re.search(GRP.lower(), Group.lower()):
                    return await rizx.send_message("Sorry !! I can't Spam there")
               k = await Riz.get_entity(Group)
               grp_id = k.id
