@@ -1186,19 +1186,6 @@ loop.run_until_complete(RiZoeLX())
 XX.append(1517994352)
 XX.append(OWNER_ID)
 
-if BOT_TOKEN:
-    RiZoeL = TelegramClient(
-    session="RiZoeL-Bot",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    connection=ConnectionTcpAbridged,
-    auto_reconnect=True,
-    connection_retries=None,
-    ).start(bot_token=BOT_TOKEN)
-    print("× Bot Token Found ×")
-else:
-    RiZoeL = None
-
 async def logss():
      owner = int(OWNER_ID)
      Log_msg = "**🔶 RiZoeL X Spam Started 🔶 **\n\n"
