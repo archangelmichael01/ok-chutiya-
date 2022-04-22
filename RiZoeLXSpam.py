@@ -1189,7 +1189,7 @@ XX.append(OWNER_ID)
 if BOT_TOKEN:
     RiZoeL = TelegramClient(
     session="RiZoeL-Bot",
-    api_id=APP_ID,
+    api_id=API_ID,
     api_hash=API_HASH,
     connection=ConnectionTcpAbridged,
     auto_reconnect=True,
