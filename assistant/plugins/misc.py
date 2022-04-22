@@ -4,7 +4,7 @@ from telethon.tl.types import ChannelParticipantsAdmins
 from datetime import timedelta
 from telethon.tl.functions.photos import GetUserPhotosRequest as P
 from telethon.tl.functions.users import GetFullUserRequest
-
+from assistant import RiZoeL
 
 
 @RiZoeL.on(events.NewMessage(pattern="^[!?/]id"))
