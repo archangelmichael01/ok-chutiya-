@@ -16,8 +16,7 @@ ABORT = "**All process Cancelled !**"
 
 @RiZoeL.on(events.NewMessage(pattern="[!/]spam"))
 async def spam(event):
-     if event.sender_id not in DEV or event.sender_id not in SUDO_USERS:
-             return
+  if event.sender_id in DEV or event.sender_id in SUDO_USERS:
      if event.is_group:
           return await event.reply("**Use This Cmd In PM**")
      async with RiZoeL.conversation(event.chat_id) as rizx:
