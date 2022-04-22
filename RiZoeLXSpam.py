@@ -174,7 +174,7 @@ async def RiZoeLX():
             await Riz2(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz2(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz2.get_me()
-            id_3 = telethon.utils.get_peer_id(botme)
+            id_2 = telethon.utils.get_peer_id(botme)
             CLIENTS.append(id_2)
         except Exception as e:
             print(e)
