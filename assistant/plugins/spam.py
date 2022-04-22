@@ -256,7 +256,7 @@ async def spam(event):
                   await Riz37.send_message(grp_id, message)
               if Riz38:
                   await Riz38.send_message(grp_id, message)
-                 $ await asyncio.sleep(0.3)
+                 # await asyncio.sleep(0.3)
               if Riz39:
                   await Riz39.send_message(grp_id, message)
                 #  await asyncio.sleep(0.3)
