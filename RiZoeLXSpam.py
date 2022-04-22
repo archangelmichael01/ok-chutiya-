@@ -30,7 +30,7 @@ from telethon.errors.rpcerrorlist import PhoneCodeExpiredError, PhoneCodeInvalid
 from telethon.tl.types import Channel, Chat, InputPhoto, User
 from telethon.tl.functions.account import UpdateProfileRequest
 from telethon.tl.functions.photos import UploadProfilePhotoRequest
-from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
+from assistant import RiZoeL
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
