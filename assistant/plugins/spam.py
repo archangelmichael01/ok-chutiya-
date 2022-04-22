@@ -258,7 +258,7 @@ async def spam(event):
                        Me = await Riz40.get_me()
                        id = telethon.utils.get_peer_id(Me)
                        await RiZoeL.send_message(id, spamtext)
-            await Fukoff.edit(f"**▪️Started Spam ▪️** \n\n__Group__ : `{Group}`\n__Spam Count__ : `{count}` \n__Spam Message__ : `{message}`")
+                 await Fukoff.edit(f"**▪️Started Spam ▪️** \n\n__Group__ : `{Group}`\n__Spam Count__ : `{count}` \n__Spam Message__ : `{message}`")
         except Exception as ex:
                print(ex)
   
