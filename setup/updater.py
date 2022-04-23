@@ -50,6 +50,6 @@ async def update_requirements(main , test):
 
 # loop = asyncio.get_event_loop()
 loop = asyncio.new_event_loop()
-fuk = asyncio.set_event_loop(loop)
-fuk.run_until_complete(update_requirements(sys.argv[1] , sys.argv[2]))
+asyncio.set_event_loop(loop)
+loop.run_until_complete(update_requirements(sys.argv[1] , sys.argv[2]))
 loop.close()
