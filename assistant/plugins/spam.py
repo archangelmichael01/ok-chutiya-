@@ -34,7 +34,7 @@ async def spam(event):
         grpp = res.message.message
         if grpp.startswith("https://t.me/") or grpp.startswith("@"):
              Group = grpp
-             if re.search(GROUPP.lower(), Group.lower()):
+             if re.search(GRP.lower(), Group.lower()):
                    return await rizx.send_message("Sorry !! I can't Spam there")
              k = await Riz.get_entity(Group)
              grp_id = k.id
