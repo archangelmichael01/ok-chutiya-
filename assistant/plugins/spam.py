@@ -147,8 +147,8 @@ async def spam(event):
                    return await rizx.send_message("Sorry !! I can't Spam On @RiZoeLX's Owner")
         Fukoff = await rizx.send_message(f"__Starting Spam In {Group}__")
         try:
-           for _ in range(count):
-                for x in client:
+           for x in client:
+                for _ in range(count):
                      await send_msg(x, grp_id, message)
                      await asyncio.sleep(0.3)
            await Fukoff.edit(f"**▪️Started Spam ▪️** \n\n__Group__ : `{Group}`\n__Spam Count__ : `{count}` \n__Spam Message__ : `{message}`")
