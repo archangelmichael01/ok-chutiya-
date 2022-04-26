@@ -17,8 +17,47 @@ ABORT = "**All process Cancelled !**"
 
 client = [Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, Riz21, Riz22, Riz23, Riz24, Riz25, Riz26, Riz27, Riz28, Riz29, Riz30, Riz31, Riz32, Riz33, Riz34, Riz35, Riz36, Riz37, Riz38, Riz39, Riz40]
 
-async def send_msg(spam, chat, msg):
-    await spam.send_message(chat, msg)
+async def start_spam(chat, msg):
+    await Riz.send_message(chat, msg) #2:  
+    await Riz2.send_message(chat, msg) #3:  
+    await Riz3.send_message(chat, msg) #4:  
+    await Riz4.send_message(chat, msg) #5:  
+    await Riz5.send_message(chat, msg) #6:  
+    await Riz6.send_message(chat, msg) #7:  
+    await Riz7.send_message(chat, msg) #8:  
+    await Riz8.send_message(chat, msg) #9:  
+    await Riz9.send_message(chat, msg) #10:  
+    await Riz10.send_message(chat, msg) #11:  
+    await Riz11.send_message(chat, msg) #12:  
+    await Riz12.send_message(chat, msg) #13:  
+    await Riz13.send_message(chat, msg) #14:  
+    await Riz14.send_message(chat, msg) #15:  
+    await Riz15.send_message(chat, msg) #16:  
+    await Riz16.send_message(chat, msg) #17:  
+    await Riz17.send_message(chat, msg) #18:  
+    await Riz18.send_message(chat, msg) #19:  
+    await Riz19.send_message(chat, msg) #20:  
+    await Riz20.send_message(chat, msg) #21:  
+    await Riz21.send_message(chat, msg) #22:  
+    await Riz22.send_message(chat, msg) #23:  
+    await Riz23.send_message(chat, msg) #24:  
+    await Riz24.send_message(chat, msg) #25:  
+    await Riz25.send_message(chat, msg) #26:  
+    await Riz26.send_message(chat, msg) #27:  
+    await Riz27.send_message(chat, msg) #28:  
+    await Riz28.send_message(chat, msg) #29:  
+    await Riz29.send_message(chat, msg) #30:  
+    await Riz30.send_message(chat, msg) #31:  
+    await Riz31.send_message(chat, msg) #32:  
+    await Riz32.send_message(chat, msg) #33:  
+    await Riz33.send_message(chat, msg) #34:  
+    await Riz34.send_message(chat, msg) #35:  
+    await Riz35.send_message(chat, msg) #36:  
+    await Riz36.send_message(chat, msg) #37:  
+    await Riz37.send_message(chat, msg) #38:  
+    await Riz38.send_message(chat, msg) #39:  
+    await Riz39.send_message(chat, msg) #40:  
+    await Riz40.send_message(chat, msg)
 
 @RiZoeL.on(events.NewMessage(pattern="[!/]spam"))
 async def spam(event):
@@ -121,8 +160,6 @@ async def spam(event):
                        await Riz40(functions.channels.JoinChannelRequest(channel=Group))
              except Exception as ex:
                       print(ex)
-                    #  await rizx.send_message(f"Error !! \n\n {ex}")
-                     # return
         else:
             await rizx.send_message("Error! Send Group link or Username")
             return
@@ -147,11 +184,9 @@ async def spam(event):
                    return await rizx.send_message("Sorry !! I can't Spam On @RiZoeLX's Owner")
         Fukoff = await rizx.send_message(f"__Starting Spam In {Group}__")
         try:
-           for x in client:
-                for _ in range(count):
-                     await send_msg(x, grp_id, message)
-                     await asyncio.sleep(0.3)
+           for _ in range(count):
+                  await start_spam(grp_id, message)
+                  await asyncio.sleep(0.3)
            await Fukoff.edit(f"**▪️Started Spam ▪️** \n\n__Group__ : `{Group}`\n__Spam Count__ : `{count}` \n__Spam Message__ : `{message}`")
         except Exception as ex:
-            #   await rizx.send_message(f"Error !! \n\n {ex}")
                print(ex)
