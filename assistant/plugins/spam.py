@@ -121,7 +121,7 @@ async def spam(event):
                        await Riz40(functions.channels.JoinChannelRequest(channel=Group))
              except Exception as ex:
                       print(ex)
-                      rizx.send_message(f"Error !! \n\n {ex}")
+                      await rizx.send_message(f"Error !! \n\n {ex}")
                       return
         else:
             await rizx.send_message("Error! Send Group link or Username")
@@ -153,5 +153,5 @@ async def spam(event):
                      await asyncio.sleep(0.3)
            await Fukoff.edit(f"**▪️Started Spam ▪️** \n\n__Group__ : `{Group}`\n__Spam Count__ : `{count}` \n__Spam Message__ : `{message}`")
         except Exception as ex:
-               rizx.send_message(f"Error !! \n\n {ex}")
+               await rizx.send_message(f"Error !! \n\n {ex}")
                print(ex)
