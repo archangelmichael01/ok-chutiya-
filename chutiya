@@ -20,7 +20,7 @@ _starter () {
     cd $XPATH
     python3 ../setup/updater.py ../requirements.txt requirements.txt
     echo "••• STARTING •••"
-    python3 RiZoeLXSpam.py
+    python3 -m SpamX
 }
 
 _starter
