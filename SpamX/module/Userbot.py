@@ -4,6 +4,7 @@ import sys
 import asyncio
 import datetime
 import time
+from pyrogram import __version__ as pyro_vr
 from SpamX import (RiZoeL1, RiZoeL2, RiZoeL3, RiZoeL4, RiZoeL5, 
                 RiZoeL6, RiZoeL7, RiZoeL8, RiZoeL9, RiZoeL10, 
                 RiZoeL11, RiZoeL12, RiZoeL13, RiZoeL14, RiZoeL15, 
@@ -22,8 +23,8 @@ Alivemsg = ALIVE_MSG if ALIVE_MSG else "𝗥𝗶𝗭𝗼𝗲𝗟 𝗫 𝗦𝗽�
 rizoel = f"✧ {Alivemsg} ✧\n\n"
 rizoel += f"════════════════════\n"
 rizoel += f"► **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.10.4`\n"
-rizoel += f"► **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
-rizoel += f"► **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"
+rizoel += f"► **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ** : `{pyro_vr}`\n"
+rizoel += f"► **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{__version__}`\n"
 rizoel += f"► **ᴄʜᴀɴɴᴇʟ** : [Join.](https://t.me/RiZoeLX)\n"
 rizoel += f"════════════════════\n\n"
 rizoel += f"► **Source Code:** [•Repo•](https://github.com/RiZoeLX/SpamX)"
@@ -78,9 +79,6 @@ async def ping(_, e: Message):
       end = datetime.datetime.now()
       ms = (end-start).microseconds / 1000
       await Fuk.edit_text(f"⌾ {pongg} ⌾ \n\n ༝ ᴘɪɴɢ: `{ms}` ᴍs \n ༝ ᴜᴘᴛɪᴍᴇ: `{uptime}` \n ༝ ᴠᴇʀsɪᴏɴ: `{__version__}`")
-
-
-
 
 
 
