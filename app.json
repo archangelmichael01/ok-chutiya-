@@ -4,7 +4,7 @@
       "logo": "https://telegra.ph/file/db194f99e15db50f43c72.jpg",
       "keywords": [
         "telegram",
-        "telethon",
+        "PYROGRAM",
         "telegram-bot",
         "RiZoeLXSpam",
         "SpamBots"
@@ -28,108 +28,103 @@
         "value": "",
         "required": true
       },
-      "BOT_TOKEN": {
-        "description": "Fill Bot Token If You want Spam Assistant else Leave it blank",
-        "value": "",
-        "required": false
-      },
-      "STRING": {
-        "description": "Telethon String Session",
+      "SESSION": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": true
       },
-      "STRING2": {
-        "description": "Telethon String Session",
+      "SESSION2": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING3": {
-        "description": "Telethon String Session",
+      "SESSION3": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING4": {
-        "description": "Telethon String Session",
+      "SESSION4": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING5": {
-        "description": "Telethon String Session",
+      "SESSION5": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING6": {
-        "description": "Telethon String Session",
+      "SESSION6": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING7": {
-        "description": "Telethon String Session",
+      "SESSION7": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING8": {
-        "description": "Telethon String Session",
+      "SESSION8": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING9": {
-        "description": "Telethon String Session",
+      "SESSION9": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING10": {
-        "description": "Telethon String Session",
+      "SESSION10": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING11": {
-        "description": "Telethon String Session",
+      "SESSION11": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING12": {
-        "description": "Telethon String Session",
+      "SESSION12": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING13": {
-        "description": "Telethon String Session",
+      "SESSION13": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING14": {
-        "description": "Telethon String Session",
+      "SESSION14": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING15": {
-        "description": "Telethon String Session",
+      "SESSION15": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING16": {
-        "description": "Telethon String Session",
+      "SESSION16": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING17": {
-        "description": "Telethon String Session",
+      "SESSION17": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING18": {
-        "description": "Telethon String Session",
+      "SESSION18": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING19": {
-        "description": "Telethon String Session",
+      "SESSION19": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },
-      "STRING20": {
-        "description": "Telethon String Session",
+      "SESSION20": {
+        "description": "PYROGRAM SESSION Session",
         "value": "",
         "required": false
       },      
