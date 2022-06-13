@@ -4,3 +4,4 @@ cryptg
 psycopg2
 gitpython
 asyncio
+python-dotenv
