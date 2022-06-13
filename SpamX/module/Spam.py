@@ -3,7 +3,7 @@ import sys
 import asyncio
 import re
 from random import choice
-from SpamX import (RiZoeL1, RiZoeL2, RiZoeL3, RiZoeL4, RiZoeL5, 
+from SpamX import (RiZoeL, RiZoeL2, RiZoeL3, RiZoeL4, RiZoeL5, 
                 RiZoeL6, RiZoeL7, RiZoeL8, RiZoeL9, RiZoeL10, 
                 RiZoeL11, RiZoeL12, RiZoeL13, RiZoeL14, RiZoeL15, 
                 RiZoeL16, RiZoeL17, RiZoeL18, RiZoeL19, RiZoeL20, HNDLR,
