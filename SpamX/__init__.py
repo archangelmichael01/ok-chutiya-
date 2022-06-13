@@ -9,7 +9,6 @@ import time
 
 from dotenv import load_dotenv
 from pyrogram import Client, filters
-from pytgcalls import PyTgCalls
 
 
 if os.path.exists(".env"):
