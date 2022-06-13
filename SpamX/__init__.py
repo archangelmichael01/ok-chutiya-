@@ -9,7 +9,7 @@ import time
 
 from dotenv import load_dotenv
 from pyrogram import Client, filters
-
+from os import getenv
 
 if os.path.exists(".env"):
     load_dotenv(".env")
