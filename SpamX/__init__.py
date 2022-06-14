@@ -58,17 +58,10 @@ SUDO_USERS.append(OWNER_ID)
 # SUDO_USERS = list(filter(lambda x: x, map(int, os.getenv("SUDO_USERS", "1517994352 1789859817 1432756163").split())))
 #----------------------------------------------
 
-RiZoeL = Client(
-    'RiZoeLXSpam',
-    api_id=API_ID,
-    api_hash=API_HASH,
-    session_string=SESSION,
-    plugins={'root': 'SpamX.module'},
-)
+RiZoeL = Client(name="RiZoeL", api_id=API_ID, api_hash=API_HASH, session_string=SESSION)
 
 hl = HNDLR[0]
 start_time = time.time()
-
 
 
 #-------------------------CLIENTS-----------------------------
