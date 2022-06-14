@@ -10,7 +10,7 @@ def load_plugins(plugin_name):
     load = importlib.util.module_from_spec(spec)
     load.logger = logging.getLogger(plugin_name)
     spec.loader.exec_module(load)
-    sys.modules["RiZoeLXSpam.plugins." + plugin_name] = load
+    sys.modules["SpamX.module." + plugin_name] = load
     print("Spam X has Imported:" + plugin_name)
 
 
