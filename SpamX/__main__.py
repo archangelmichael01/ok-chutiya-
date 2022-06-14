@@ -1,5 +1,9 @@
-
+import sys
+from sys import argv
+import glob
+from pathlib import Path
 import asyncio
+from SpamX.utils import load_plugins
 from pyrogram import idle
 from . import (RiZoeL, RiZoeL2, RiZoeL3, RiZoeL4, RiZoeL5, 
                 RiZoeL6, RiZoeL7, RiZoeL8, RiZoeL9, RiZoeL10, 
@@ -173,3 +177,178 @@ async def startup():
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(startup())
+
+
+path = "RiZoeLXSpam/plugins/*.py"
+files = glob.glob(path)
+for name in files:
+    with open(name) as a:
+        patt = Path(a.name)
+        plugin_name = patt.stem
+        load_plugins(plugin_name.replace(".py", ""))
+
+print("Pyrogram Spam Successfully deployed -!")
+print("Enjoy! Do visit @RiZoeLX")
+
+if len(argv) not in (1, 3, 4):
+    try:
+        RiZoeL.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL2.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL3.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL4.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL5.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL6.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL7.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL8.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL9.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL10.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL11.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL12.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL13.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL14.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL15.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL16.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL17.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL18.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL19.disconnect()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL20.disconnect()
+    except Exception as e:
+        pass
+else:
+    try:
+        RiZoeL.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL2.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL3.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL4.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL5.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL6.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL7.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL8.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL9.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL10.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL11.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL12.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL13.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL14.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL15.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL16.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL17.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL18.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL19.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        RiZoeL20.run_until_disconnected()
+    except Exception as e:
+        pass
