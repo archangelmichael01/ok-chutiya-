@@ -179,7 +179,7 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(startup())
 
 
-path = "RiZoeLXSpam/plugins/*.py"
+path = "SpamX/module/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as a:
